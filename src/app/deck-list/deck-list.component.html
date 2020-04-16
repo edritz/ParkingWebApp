@@ -1,0 +1,22 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Deck Name</th>
+            <th scope="col">Capacity</th>
+            <th scope="col">Cars Parked</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let deck of decks">
+            <td>{{ deck.id }}</td>
+            <td>{{ deck.deckName }}</td>
+            <td>{{ deck.capacity }}</td>
+            <td>{{ deck.occupancy }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
