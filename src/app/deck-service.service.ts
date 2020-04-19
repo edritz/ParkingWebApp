@@ -9,7 +9,7 @@ export class DeckService {
   private deckUrl: string;
  
   constructor(private http: HttpClient) {
-    this.deckUrl = 'http://localhost:8080/decklist/all';
+    this.deckUrl = 'http://parking-space.info:8080/decklist/all';
   }
  
   public findAll(): Observable<Deck[]> {
